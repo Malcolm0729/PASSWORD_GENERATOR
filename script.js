@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 
 
  function generatePassword(){
-  var pwLength = prompt("Please enter desired length of your password (less than 8 and no more than 128)");
+  var pwLength = prompt("Please enter desired length of your password (less than 8 and no more than 15)");
   var passwordPool = []
   var password = []
   //Check for the length and see that its within range
