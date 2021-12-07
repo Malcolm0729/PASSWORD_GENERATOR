@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 
 
  function generatePassword(){
-  var pwLength = prompt("Please create a new password. (less than 8 and no more than 15)");
+  var pwLength = prompt("Please create a new password. (It can be less than 8 characters but no more than 25)");
   var passwordPool = []
   var password = []
   //Check for the length and see that its within range
@@ -17,7 +17,7 @@ var generateBtn = document.querySelector("#generate");
     alert("Please enter a password greater than 8 characters.");
     return "";
  } else if (pwLength > 128) {
-    alert("Please enter a password less than 15.");
+    alert("Please enter a password less than 25.");
     return "";
  } else {
     var numbersPrompt = confirm("Be Sure To Add Numbers");
